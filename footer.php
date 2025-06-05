@@ -1,6 +1,6 @@
 <?php
 /**
- * Foorter template for Arte AngieBu Theme
+ * Footer template for Arte AngieBu Theme
  *
  * @package arte-angiebu
  * @since 1.0
