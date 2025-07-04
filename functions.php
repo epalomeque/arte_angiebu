@@ -24,9 +24,11 @@
     function arte_angiebu_enqueue_scripts() {
         // Enqueue main stylesheet
         wp_enqueue_style( 'arte-angiebu-style', get_stylesheet_uri() );
+        wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/assets/library/css/bootstrap.min.css', array(), null );
 
         // Enqueue custom script
         wp_enqueue_script( 'arte-angiebu-mainjs', get_template_directory_uri() . '/js/main.js', array(), null, true );
+        wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/library/js/bootstrap.bundle.min.js', ['jquery'], null, true );
     }
     add_action( 'wp_enqueue_scripts', 'arte_angiebu_enqueue_scripts' );
 ?>
