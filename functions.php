@@ -19,20 +19,5 @@
     function arte_angiebu_get_theme_instance() {
         \ARTE_ANGIEBU_THEME\Inc\ARTE_ANGIEBU_THEME::get_instance();
     }
-    arte_angiebu_get_theme_instance();
-
-    function arte_angiebu_setup() {
-        // Add support for title tag
-        add_theme_support( 'title-tag' );
-    
-        // Add support for post thumbnails
-        add_theme_support( 'post-thumbnails' );
-    
-        // Register navigation menus
-        register_nav_menus( array(
-        'primary' => __( 'Primary Menu', 'arte-angiebu' ),
-        'footer'  => __( 'Footer Menu', 'arte-angiebu' ),
-        ) );
-    }
-    add_action( 'after_setup_theme', 'arte_angiebu_setup' );
+    arte_angiebu_get_theme_instance();    
 ?>
